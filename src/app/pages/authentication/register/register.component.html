@@ -1,0 +1,216 @@
+<div class="page-bg"></div>
+
+<div class="animation-wrapper">
+	<div class="particle particle-1"></div>
+	<div class="particle particle-2"></div>
+	<div class="particle particle-3"></div>
+	<div class="particle particle-4"></div>
+</div>
+
+
+<div class="flex-grid-story">
+	<div cdsGrid [condensed]="true">
+		<div cdsRow [condensed]="true">
+			<div cdsCol class="mx-auto" [columnNumbers]="{sm: 4, md: 4, lg: 8}">
+				<div class="inside ">
+					<cds-tile class="bg-white shadow ">
+
+
+						<h1>Create a ZSE DS Account.</h1>
+						<h2 class="mb-5">Account Information</h2>
+
+						<div class="d-flex justify-content-start gap-2">
+
+							<cds-tile [ngClass]="">
+								Institutional Client
+							</cds-tile>
+							<cds-tile>
+								Individual Client
+							</cds-tile>
+						</div>
+
+						<form (submit)="registerClient()">
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Account Number
+									<input cdsText [(ngModel)]="client.accountNumber" name="accountNumber"
+										[placeholder]="'Account Number...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Title
+									<input cdsText [(ngModel)]="client.title" name="title" [placeholder]="'Title...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									First Name
+									<input cdsText [(ngModel)]="client.firstName" name="firstName"
+										[placeholder]="'First Name...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Last Name
+									<input cdsText [(ngModel)]="client.lastname" name="lastname"
+										[placeholder]="'Last Name...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									ID Number
+									<input cdsText [(ngModel)]="client.idNumber" name="idNumber"
+										[placeholder]="'ID Number...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Passport Number
+									<input cdsText [(ngModel)]="client.passportNumber" name="passportNumber"
+										[placeholder]="'Passport Number...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Date of Birth
+									<input cdsText [(ngModel)]="client.dob" name="dob"
+										[placeholder]="'Date of Birth...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Gender
+									<input cdsText [(ngModel)]="client.gender" name="gender"
+										[placeholder]="'Gender...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Email
+									<input cdsText [(ngModel)]="client.email" name="email" [placeholder]="'Email...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Mobile Number
+									<input cdsText [(ngModel)]="client.mobileNumber" name="mobileNumber"
+										[placeholder]="'Mobile Number...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									House Number
+									<input cdsText [(ngModel)]="client.housenumber" name="housenumber"
+										[placeholder]="'House Number...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Street Name
+									<input cdsText [(ngModel)]="client.streetName" name="streetName"
+										[placeholder]="'Street Name...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Suburb
+									<input cdsText [(ngModel)]="client.surburb" name="surburb"
+										[placeholder]="'Suburb...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									City
+									<input cdsText [(ngModel)]="client.city" name="city" [placeholder]="'City...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Country
+									<input cdsText [(ngModel)]="client.country" name="country"
+										[placeholder]="'Country...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Foreign/Local
+									<input cdsText [(ngModel)]="client.foreignLocal" name="foreignLocal"
+										[placeholder]="'Foreign/Local...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Source of Income
+									<input cdsText [(ngModel)]="client.sourceOfIncome" name="sourceOfIncome"
+										[placeholder]="'Source of Income...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Company
+									<input cdsText [(ngModel)]="client.company" name="company"
+										[placeholder]="'Company...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Registration Number
+									<input cdsText [(ngModel)]="client.registrationNumber" name="registrationNumber"
+										[placeholder]="'Registration Number...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Status
+									<input cdsText [(ngModel)]="client.status" name="status"
+										[placeholder]="'Status...'" />
+								</cds-label>
+							</div>
+
+							<div class="mb-5">
+								<cds-label [helperText]="''">
+									Client Type ID
+									<input cdsText [(ngModel)]="client.clientTypeId" name="clientTypeId"
+										[placeholder]="'Client Type ID...'" />
+								</cds-label>
+							</div>
+
+
+							<cds-button-set>
+								<button type="button" cdsButton="secondary">
+									Cancel
+								</button>
+								<button type="submit" cdsButton>Create Client</button>
+							</cds-button-set>
+
+
+
+						</form>
+					</cds-tile>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>

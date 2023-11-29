@@ -1,0 +1,20 @@
+export interface Indices {
+    id: string | null;
+    status: string | null;
+    createDated: Date | null;
+    modifedDate: Date | null;
+    createdUser: string | null;
+    modifiedUser: string | null;
+    systemField: string | null;
+    approvedBy: string | null;
+    dateApproved: Date | null;
+    _index: string | null;
+    latest_date: string | null;
+    total_count: string | null;
+    open: string | null;
+    high: string | null;
+    low: string | null;
+    close: string | null;
+    percentage_change: string | null;
+    point_change: string | null;
+  }
